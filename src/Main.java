@@ -28,18 +28,30 @@ public class Main {
         // в обратном порядке через запятую. В конце строки запятую ставить не надо.
 
         for (int i = massiv1.length - 1; i >= 0 ; i--) {
-            System.out.print(massiv1[i] + ", ");
+            System.out.print(massiv1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
-        System.out.println(" ");
+        System.out.println();
+
         for (int i = massiv2.length - 1; i >= 0 ; i--) {
-            System.out.print(massiv2[i] + ", ");
+            System.out.print(massiv2[i]);
+            if (i!=0) {
+                System.out.print(", ");
+            }
         }
-        System.out.println(" ");
+        System.out.println();
+
+
         for (int i = massiv3.length - 1; i >= 0 ; i--) {
-            System.out.print(massiv3[i] + ", ");
+            System.out.print(massiv3[i]);
+            if (i !=0) {
+                System.out.print(", ");
+            }
         }
 
-        System.out.println(" ");
+        System.out.println();
         System.out.println("Задача 4");
         // Пройдитесь по первому целочисленному массиву и все нечетные числа в нем
         // сделайте четными (нужно прибавить 1).
