@@ -25,12 +25,15 @@ public class Main {
         int[] massiv1 = generateRandomArray();
 
         System.out.println("Задачa 1");
+        int summa = 0;
         // Напишите программу, которая решит эту задачу, и выведите в консоль
         // результат в формате: «Сумма трат за месяц составила … рублей».
         for (int currentMonth : massiv1) {
+            summa += currentMonth;
             System.out.println("Сумма трат за месяц = " + currentMonth + " руб.");
         }
-
+        System.out.println();
+        System.out.println("Сумма трат за год = " + summa + " руб.");
 
     }
 
@@ -77,7 +80,7 @@ public class Main {
         for (int element3 : massiv3) {
             summ += element3;
         }
-        float srednee = summ / massiv3.length;
+        float srednee = (float) summ / massiv3.length;
         System.out.println("Средняя сумма трат за месяц составила " + srednee + " руб.");
 
     }
