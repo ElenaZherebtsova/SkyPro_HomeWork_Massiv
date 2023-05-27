@@ -1,4 +1,5 @@
 
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -54,10 +55,10 @@ public class Main {
             }
         }
 
-        System.out.println("Массив:");
-        for (int element : massiv2) {
-            System.out.println(element);
-        }
+//        System.out.println("Массив:");
+//        for (int element : massiv2) {
+//            System.out.println(element);
+//        }
         System.out.println("Минимальная сумма трат = " + minMoney + " руб.");
         System.out.println("Максимальная сумма трат = " + maxMoney + " руб.");
     }
